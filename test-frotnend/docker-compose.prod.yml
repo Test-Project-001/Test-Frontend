@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   frontend_next:
+    image: nitinsaa1999/testproject-frontend_next
     build:
       context: .
       dockerfile: ./Dockerfile
