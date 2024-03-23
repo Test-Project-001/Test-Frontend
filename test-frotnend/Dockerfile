@@ -1,8 +1,10 @@
 FROM node:20-alpine
 
+RUN npm install -g typescript
+
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm i --no-audit --force
 
 COPY . .
 
@@ -13,3 +15,4 @@ RUN npm install
 EXPOSE 3000
 
 CMD ["npm", "run", "dev"]
+
