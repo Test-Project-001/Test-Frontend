@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+# Install required packages including useradd
+RUN apk add --no-cache shadow
+
+# Add a new user
+RUN useradd -m -s /bin/bash nitin_kumar
+
+# Switch to the new user
+USER nitin_kumar
+
+# RUN chown -R node:node /app
+
+# WORKDIR D:\Test Project\Frontend\Test-Frontend\test-frotnend
