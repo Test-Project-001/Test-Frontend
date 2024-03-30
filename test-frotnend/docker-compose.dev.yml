@@ -9,6 +9,7 @@ services:
       dockerfile: Dockerfile2
     volumes:
       - D:\Test Project\Frontend\Test-Frontend\test-frotnend:/app:rw
+    env_file: ./.env
     environment:
       NODE_ENV: development
     ports:
