@@ -9,7 +9,7 @@ services:
       context: ./
       dockerfile: DockerfileDev
     volumes:
-      - D:\Test Project\Frontend:/app:rw
+      - D:/Test Project/Frontend/Test-Frontend/test-frotnend:/app:rw
     env_file: ./.env.dev
     environment:
       NODE_ENV: development
