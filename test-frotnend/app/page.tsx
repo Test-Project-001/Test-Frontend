@@ -1,4 +1,7 @@
+import axios from "axios";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import ComponentExample from "./component";
 
 export default function Home() {
   return (
@@ -108,6 +111,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <ComponentExample />
     </main>
   );
 }
