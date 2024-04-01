@@ -52,7 +52,7 @@ jobs:
 
      # This step installs dependencies from package.json using npm ci.
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
      # This step runs your project's tests using npm test.
       # - name: Run tests
