@@ -52,7 +52,7 @@ jobs:
 
      # This step installs dependencies from package.json using npm ci.
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
      # This step runs your project's tests using npm test.
       # - name: Run tests
@@ -81,8 +81,8 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: docker push nitinsaa1999/testproject-frontend_next_prod  # Replace with your image name
 
-
-
-
-
+      #  optional command for above command
+        # - name: Push Docker image
+        # run: |
+        #   docker-compose -f docker-compose.yml push
 
